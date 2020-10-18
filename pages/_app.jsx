@@ -9,7 +9,7 @@ import Title from "component/Title"
  */
 
 /** @type {React.FC<AppProps>} */
-const MyApp = ({Component, pageProps}) => (
+const Application = ({Component, pageProps}) => (
   <Fragment>
     <Title title="Nick's Website" />
 
@@ -17,4 +17,4 @@ const MyApp = ({Component, pageProps}) => (
   </Fragment>
 )
 
-export default MyApp
+export default Application
