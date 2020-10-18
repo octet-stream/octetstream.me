@@ -1,4 +1,4 @@
-import {Fragment} from "react"
+import {Fragment} from "preact/compat"
 
 import "style/globals.css"
 

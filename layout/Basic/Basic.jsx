@@ -1,4 +1,4 @@
-import {Fragment} from "react"
+import {Fragment} from "preact/compat"
 
 import Title from "component/Title"
 
