@@ -2,31 +2,20 @@
 (() => {
   "use strict"
 
-  const DARK_MODE_STORAGE_KEY = "@@OCTETSTREAM_DARK_MODE_ENABLED"
-
   /**
-   * Overrides classes on document.body depending on the dark mode status
+   * Sets the dark mode status and a classname for <body>
    *
-   * @param {boolean} isEnabled
-   */
-  function setClassName(isEnabled) {
-    document.body.classList.add(isEnabled ? "dark" : "light")
-    document.body.classList.remove(isEnabled ? "light" : "dark")
-  }
-
-  /**
-   * Changes the dark mode status
-   *
-   * @param {MediaQueryList} event
+   * @param {MediaQueryListEvent} event
    */
   function setDarkMode({matches}) {
-    setClassName(matches)
-
-    if (sessionStorage.getItem(DARK_MODE_STORAGE_KEY) === null) {
-      sessionStorage.setItem(DARK_MODE_STORAGE_KEY, matches)
-    }
+    document.body.classList.add(matches ? "dark" : "light")
+    document.body.classList.remove(matches ? "light" : "dark")
   }
 
-  setDarkMode(matchMedia("(prefers-color-scheme: dark)"))
+  const mq = matchMedia("(prefers-color-scheme: dark)")
+
+  mq.addEventListener("change", setDarkMode, true)
+
+  setDarkMode(mq)
 })()
 /* eslint-enable strict */
