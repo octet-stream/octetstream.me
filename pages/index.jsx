@@ -1,7 +1,4 @@
 import github from "lib/graphql/github"
-import layout from "lib/hoc/layout"
-
-import BasicLayout from "layout/Basic"
 
 /**
  * @typedef {Object} Viewer
@@ -31,7 +28,7 @@ export const getStaticProps = async () => {
           name
           login
           email
-          avatarUrl(size: 200)
+          avatarUrl(size: 150)
           isHireable
           location
         }
@@ -44,7 +41,4 @@ export const getStaticProps = async () => {
   }
 }
 
-/** @type {React.FC<HomePageProps>} */
-const Home = () => <div>Home page</div>
-
-export default Home |> layout(BasicLayout)
+export {default} from "component/Home"
