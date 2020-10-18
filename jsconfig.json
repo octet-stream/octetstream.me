@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "checkJs": true,
+    "baseUrl": ".",
+    "jsx": "preserve"
+  }
+}
