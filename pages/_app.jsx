@@ -1,4 +1,8 @@
+import {Fragment} from "react"
+
 import "style/globals.css"
+
+import Title from "component/Title"
 
 /**
  * @typedef {import("next/app").AppProps} AppProps
@@ -6,7 +10,11 @@ import "style/globals.css"
 
 /** @type {React.FC<AppProps>} */
 const MyApp = ({Component, pageProps}) => (
-  <Component {...pageProps} />
+  <Fragment>
+    <Title title="Nick's Website" />
+
+    <Component {...pageProps} />
+  </Fragment>
 )
 
 export default MyApp
