@@ -1,0 +1,13 @@
+.light {
+  --colors-black: #353535;
+  --colors-white: white;
+  --colors-text: var(--colors-black);
+  --colors-background: var(--colors-white);
+}
+
+.dark {
+  --colors-black: #1c1f26;
+  --colors-white: #c0c5ce;
+  --colors-text: var(--colors-white);
+  --colors-background: var(--colors-black);
+}
