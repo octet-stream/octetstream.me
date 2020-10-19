@@ -11,6 +11,7 @@ import github from "lib/graphql/github"
  * @prop {{viewer: Viewer}} [data]
  */
 
+/** @type {string} */
 const query = /* GraphQL */ `
   query {
     viewer {
