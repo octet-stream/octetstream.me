@@ -11,23 +11,23 @@ import github from "lib/graphql/github"
  * @prop {{viewer: Viewer}} [data]
  */
 
+const query = /* GraphQL */ `
+  query {
+    viewer {
+      name
+      login
+      email
+      avatarUrl(size: 150)
+      isHireable
+      location
+    }
+  }
+`
+
 /** @type {import("next").GetStaticProps<HomePageProps>} */
 export const getStaticProps = async () => {
   /** @type {HomePageProps} */
-  const result = await github({
-    query: /* GraphQL */ `
-      query {
-        viewer {
-          name
-          login
-          email
-          avatarUrl(size: 150)
-          isHireable
-          location
-        }
-      }
-    `
-  })
+  const result = await github({query})
 
   return {
     props: result,
