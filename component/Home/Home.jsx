@@ -37,7 +37,7 @@ const Home = ({data}) => {
         {viewer.name}
       </h3>
       <div>
-        Hi! I am JavaScript developer located in {viewer.location}.
+        Hi! I am JavaScript developer based in {viewer.location}.
       </div>
       <div>
         I‘m writing code both for browsers and Node.js
