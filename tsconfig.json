@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "checkJs": true,
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "noEmit": true,
+    "allowJs": true,
+    "types": ["node"],
+    "esModuleInterop": true,
+    "target": "ES2017",
+    "lib": ["DOM", "ES2017"]
+  }
+}

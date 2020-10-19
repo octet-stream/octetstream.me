@@ -351,7 +351,7 @@
     "@babel/helper-create-class-features-plugin" "^7.12.1"
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-proposal-decorators@^7.12.1":
+"@babel/plugin-proposal-decorators@7.12.1":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.12.1.tgz#59271439fed4145456c41067450543aee332d15f"
   integrity sha512-knNIuusychgYN8fGJHONL0RbFxLGawhXOJNLBk75TniTsZZeA+wdkDuv6wp4lGwzQEKjZi6/WYtnb3udNPmQmQ==
@@ -360,7 +360,7 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-syntax-decorators" "^7.12.1"
 
-"@babel/plugin-proposal-do-expressions@^7.12.1":
+"@babel/plugin-proposal-do-expressions@7.12.1":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-do-expressions/-/plugin-proposal-do-expressions-7.12.1.tgz#8d7f1bc532d8168147555c26e3db922cc0dfd2f8"
   integrity sha512-bpJ6Bfrzvdzb0vG6zBSNh3HLgFKh+S2CBpNmaLRjg2u7cNkzRPIqBjVURCmpG6pvPfKyxkizwbrXwpYtW3a9cw==
@@ -400,7 +400,7 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-syntax-json-strings" "^7.8.0"
 
-"@babel/plugin-proposal-logical-assignment-operators@^7.11.0", "@babel/plugin-proposal-logical-assignment-operators@^7.12.1":
+"@babel/plugin-proposal-logical-assignment-operators@7.12.1", "@babel/plugin-proposal-logical-assignment-operators@^7.11.0":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-logical-assignment-operators/-/plugin-proposal-logical-assignment-operators-7.12.1.tgz#f2c490d36e1b3c9659241034a5d2cd50263a2751"
   integrity sha512-k8ZmVv0JU+4gcUGeCDZOGd0lCIamU/sMtIiX3UWnUc5yzgq6YUGyEolNYD+MLYKfSzgECPcqetVcJP9Afe/aCA==
@@ -408,7 +408,7 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-syntax-logical-assignment-operators" "^7.10.4"
 
-"@babel/plugin-proposal-nullish-coalescing-operator@^7.10.4", "@babel/plugin-proposal-nullish-coalescing-operator@^7.12.1":
+"@babel/plugin-proposal-nullish-coalescing-operator@7.12.1", "@babel/plugin-proposal-nullish-coalescing-operator@^7.10.4":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-nullish-coalescing-operator/-/plugin-proposal-nullish-coalescing-operator-7.12.1.tgz#3ed4fff31c015e7f3f1467f190dbe545cd7b046c"
   integrity sha512-nZY0ESiaQDI1y96+jk6VxMOaL4LPo/QDHBqL+SF3/vl6dHkTwHlOI8L4ZwuRBHgakRBw5zsVylel7QPbbGuYgg==
@@ -458,7 +458,7 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-syntax-optional-catch-binding" "^7.8.0"
 
-"@babel/plugin-proposal-optional-chaining@^7.11.0", "@babel/plugin-proposal-optional-chaining@^7.12.1":
+"@babel/plugin-proposal-optional-chaining@7.12.1", "@babel/plugin-proposal-optional-chaining@^7.11.0":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-optional-chaining/-/plugin-proposal-optional-chaining-7.12.1.tgz#cce122203fc8a32794296fc377c6dedaf4363797"
   integrity sha512-c2uRpY6WzaVDzynVY9liyykS+kVU+WRZPMPYpkelXH8KBt1oXoI89kPbZKKG/jDT5UK92FTW2fZkZaJhdiBabw==
@@ -467,7 +467,7 @@
     "@babel/helper-skip-transparent-expression-wrappers" "^7.12.1"
     "@babel/plugin-syntax-optional-chaining" "^7.8.0"
 
-"@babel/plugin-proposal-pipeline-operator@^7.12.1":
+"@babel/plugin-proposal-pipeline-operator@7.12.1":
   version "7.12.1"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-pipeline-operator/-/plugin-proposal-pipeline-operator-7.12.1.tgz#4bd377bc7e5be92f22f1c08b3f3963636bd8f4a1"
   integrity sha512-iloNp4xu8YV8e/mZgGjePg9be1VkJSxQWIplRwgQtQPtF26ar3cHXL4sV8Fujlm2mm/Tu/WiA+FU+Fp7QVP7/g==
@@ -1214,7 +1214,7 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@octetstream/eslint-config@^4.0.0":
+"@octetstream/eslint-config@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@octetstream/eslint-config/-/eslint-config-4.0.0.tgz#6ef4950cd036524327ab3409757415a206258efc"
   integrity sha512-ej8ZQW5eIxBCpmQhYoNoo+PvHJt9j8uL5SrhHK2OgA0LA9y8yl5klciKrudkIMXPRhjinwTHL3ye67Mvqzwlvg==
@@ -1234,7 +1234,7 @@
   resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-1.1.1.tgz#516bd9cf47c667fbd4c82ebb53bb06535546a512"
   integrity sha512-JKh+tUzswqZgA3+lYywIcJt261M0xjI0FpMnZXQ/85bPOl/I4HdVeEUcT9rjXqsiZRrjHJMwSjZWI/HqsqgqyA==
 
-"@prefresh/next@^1.3.0":
+"@prefresh/next@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@prefresh/next/-/next-1.3.0.tgz#cfb94e45ba822fbd908ce987673937c043a83ba5"
   integrity sha512-jJmU0FuznXiaNoBVnJq2fjZgns9VT8pV7PqOk11Fkk/mE5t8spf98G7x/YU5+OLlzH94yZcJevdkzw2FiXfcPg==
@@ -1261,6 +1261,11 @@
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
+
+"@types/node@^14.11.10":
+  version "14.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.10.tgz#8c102aba13bf5253f35146affbf8b26275069bef"
+  integrity sha512-yV1nWZPlMFpoXyoknm4S56y2nlTAuFYaJuQtYRAOU7xA/FJ9RY0Xm7QOkaYMMmr8ESdHIuUb6oQgR/0+2NqlyA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -1723,7 +1728,7 @@ babel-eslint@10.0.3:
     eslint-visitor-keys "^1.0.0"
     resolve "^1.12.0"
 
-babel-eslint@^10.1.0:
+babel-eslint@10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
   integrity sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==
@@ -1742,7 +1747,7 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-module-resolver@^4.0.0:
+babel-plugin-module-resolver@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-4.0.0.tgz#8f3a3d9d48287dc1d3b0d5595113adabd36a847f"
   integrity sha512-3pdEq3PXALilSJ6dnC4wMWr0AZixHRM4utpdpBR9g5QG7B7JwWyukQv7a9hVxkbGFl+nQbrHDqqQOIBtTXTP/Q==
@@ -2943,7 +2948,7 @@ eslint-config-airbnb-base@^14.2.0:
     object.assign "^4.1.0"
     object.entries "^1.1.2"
 
-eslint-config-airbnb@^18.2.0:
+eslint-config-airbnb@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.2.0.tgz#8a82168713effce8fc08e10896a63f1235499dcd"
   integrity sha512-Fz4JIUKkrhO0du2cg5opdyPKQXOI2MvF8KUvN2710nJMT6jaRUpRE2swrJftAjVGL7T1otLM5ieo5RqS1v9Udg==
@@ -2952,7 +2957,7 @@ eslint-config-airbnb@^18.2.0:
     object.assign "^4.1.0"
     object.entries "^1.1.2"
 
-eslint-import-resolver-babel-module@^5.1.2:
+eslint-import-resolver-babel-module@5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-babel-module/-/eslint-import-resolver-babel-module-5.1.2.tgz#3d5599d49f641f9c832f001ccf7087a70a3c8c1b"
   integrity sha512-pzKE6UzXgT1Opp4N2P2yoE7OY29+LX3FNX6bqAjmGV+btR/ZYnE/oQFoGzL2/3RkLYRTBYRFwvrphRy5wEAUwg==
@@ -2993,7 +2998,7 @@ eslint-plugin-import@2.18.2:
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
 
-eslint-plugin-jsx-a11y@^6.3.1:
+eslint-plugin-jsx-a11y@6.3.1:
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.3.1.tgz#99ef7e97f567cc6a5b8dd5ab95a94a67058a2660"
   integrity sha512-i1S+P+c3HOlBJzMFORRbC58tHa65Kbo8b52/TwCwSKLohwvpfT5rm2GjGWzOHTEuq4xxf2aRlHHTtmExDQOP+g==
@@ -3015,12 +3020,12 @@ eslint-plugin-promise@4.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
-eslint-plugin-react-hooks@^4.1.2:
+eslint-plugin-react-hooks@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.1.2.tgz#2eb53731d11c95826ef7a7272303eabb5c9a271e"
   integrity sha512-ykUeqkGyUGgwTtk78C0o8UG2fzwmgJ0qxBGPp2WqRKsTwcLuVf01kTDRAtOsd4u6whX2XOC8749n2vPydP82fg==
 
-eslint-plugin-react@^7.21.4:
+eslint-plugin-react@7.21.4:
   version "7.21.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.21.4.tgz#31060b2e5ff82b12e24a3cc33edb7d12f904775c"
   integrity sha512-uHeQ8A0hg0ltNDXFu3qSfFqTNPXm1XithH6/SY318UX76CMj7Q599qWpgmMhVQyvhq36pm7qvoN3pb6/3jsTFg==
@@ -3070,7 +3075,7 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
 
-eslint@^7.11.0:
+eslint@7.11.0:
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.11.0.tgz#aaf2d23a0b5f1d652a08edacea0c19f7fadc0b3b"
   integrity sha512-G9+qtYVCHaDi1ZuWzBsOWo2wSwd70TXnU6UHA3cTYHp7gCTXZcpggWFoUVAMRarg68qtPoNfFbzPh+VdOgmwmw==
@@ -3631,7 +3636,7 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-husky@^4.3.0:
+husky@4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.0.tgz#0b2ec1d66424e9219d359e26a51c58ec5278f0de"
   integrity sha512-tTMeLCLqSBqnflBZnlVDhpaIMucSGaYyX6855jM4AguGeWCeSzNdb1mfyWduTZ3pe3SJVvVWGL0jO1iKZVPfTA==
@@ -4141,7 +4146,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.4.2:
+lint-staged@10.4.2:
   version "10.4.2"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.4.2.tgz#9fee4635c4b5ddb845746f237c6d43494ccd21c1"
   integrity sha512-OLCA9K1hS+Sl179SO6kX0JtnsaKj/MZalEhUj5yAgXsb63qPI/Gfn6Ua1KuZdbfkZNEu3/n5C/obYCu70IMt9g==
@@ -5218,7 +5223,7 @@ postcss-focus-within@^3.0.0:
   dependencies:
     postcss "^7.0.2"
 
-postcss-font-magician@^3.0.0:
+postcss-font-magician@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/postcss-font-magician/-/postcss-font-magician-3.0.0.tgz#9cbe1bda17f4927de1e82bb90e2581e7826b485a"
   integrity sha512-PqGk9TeIoWzytZeLW6AtgzuL1sJb0bO0xPr4daI6MEhidqyCMECJmwXIlAS6ypf18y6tR04cDFbLqlQruXQiIA==
@@ -5320,7 +5325,7 @@ postcss-nesting@^7.0.0:
   dependencies:
     postcss "^7.0.2"
 
-postcss-normalize@^9.0.0:
+postcss-normalize@9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-9.0.0.tgz#3b551279f78ec3b2e151bc8cf52ff6e46c4cc60c"
   integrity sha512-//kq5O1xkygzN1iCioFIBtzyVTgB6ce9+Hu0mNHuUhPn+FnnFSPybe5kBemnUPPqd7QrHc+kdX6GVECUWdU2uQ==
@@ -5352,7 +5357,7 @@ postcss-place@^4.0.1:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
 
-postcss-preset-env@^6.7.0:
+postcss-preset-env@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-6.7.0.tgz#c34ddacf8f902383b35ad1e030f178f4cdf118a5"
   integrity sha512-eU4/K5xzSFwUFJ8hTdTQzo2RBLbDVt83QZrAvI07TULOkmyQlnYlpwep+2yIK+K+0KlZO4BvFcleOCCcUtwchg==
@@ -5452,7 +5457,7 @@ postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2:
     uniq "^1.0.1"
     util-deprecate "^1.0.2"
 
-postcss-use@^3.0.0:
+postcss-use@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/postcss-use/-/postcss-use-3.0.0.tgz#dea046dcdeae2e471c3876623aa174be0139e99e"
   integrity sha512-1f+KZknB82lTcMrImLqRFJojG6GZBwQtfsSikqDf+aty6AKi449jvNyCWiZhK0Uagfc5XzUpTkxv8kbT4x7BZg==

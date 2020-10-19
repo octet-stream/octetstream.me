@@ -7,14 +7,7 @@ import Avatar from "component/Avatar"
 import {container} from "./home-page.module.css"
 
 /**
- * @typedef {Object} Viewer
- *
- * @prop {string} name
- * @prop {string} login
- * @prop {string} email
- * @prop {string} avatarUrl
- * @prop {boolean} isHireable
- * @prop {string} location
+ * @typedef {import("type/Viewer").default} Viewer
  */
 
 /**

@@ -1,14 +1,7 @@
 import github from "lib/graphql/github"
 
 /**
- * @typedef {Object} Viewer
- *
- * @prop {string} name
- * @prop {string} login
- * @prop {string} email
- * @prop {string} avatarUrl
- * @prop {boolean} isHireable
- * @prop {string} location
+ * @typedef {import("type/Viewer").default} Viewer
  */
 
 /**
