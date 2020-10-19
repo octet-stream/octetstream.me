@@ -3,8 +3,9 @@ import layout from "lib/hoc/layout"
 import BasicLayout from "layout/Basic"
 
 import Avatar from "component/Avatar"
+import Anchor from "component/Anchor"
 
-import {container} from "./home-page.module.css"
+import {container, badges} from "./home-page.module.css"
 
 /**
  * @typedef {import("type/Viewer").default} Viewer
@@ -25,15 +26,30 @@ const Home = ({data}) => {
     <div className={container}>
       <div>
         <Avatar src={viewer.avatarUrl} alt={`Avatar – @${viewer.login}`} />
+
+        <h1>
+          Hi! I am {viewer.name}
+        </h1>
+        <div>
+          <span>I am JavaScript developer. I work primarily with </span>
+          <span>Node.js, GraphQL, React, MobX and Next.js</span>
+        </div>
       </div>
-      <h3>
-        {viewer.name}
-      </h3>
-      <div>
-        Hi! I am JavaScript developer based in {viewer.location}.
-      </div>
-      <div>
-        I‘m writing code both for browsers and Node.js
+
+      <div className={badges}>
+        <div>
+          <Anchor href={`https://github.com/${viewer.login}`}>
+            Github
+          </Anchor>
+        </div>
+        <div>
+          <Anchor href="https://twitter.com/octet_stream">
+            Twitter
+          </Anchor>
+        </div>
+        <div>
+          <Anchor href={`mailto:${viewer.email}`}>Email</Anchor>
+        </div>
       </div>
     </div>
   )

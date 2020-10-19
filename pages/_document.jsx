@@ -6,7 +6,7 @@ class Document extends Base {
       <Html lang="en">
         <Head />
 
-        <body>
+        <body className="dark">
           <script src="/dark-mode.js" />
 
           <Main />

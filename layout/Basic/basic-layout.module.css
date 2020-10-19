@@ -6,11 +6,11 @@
 }
 
 .content {
-  width: 900px;
+  width: 500px;
   padding: var(--spacing-m) 0;
 }
 
-@media (width <= 900px) {
+@media (width <= 500px) {
   .content {
     padding: var(--spacing-m);
   }

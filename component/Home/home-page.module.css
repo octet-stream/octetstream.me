@@ -1,3 +1,11 @@
 .container {
+  display: grid;
   text-align: center;
+  gap: var(--spacing-m);
+}
+
+.badges {
+  display: grid;
+  gap: var(--spacing-xs);
+  grid-auto-flow: column;
 }
