@@ -1,9 +1,13 @@
+import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons"
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
+
 import layout from "lib/hoc/layout"
 
 import BasicLayout from "layout/Basic"
 
 import Avatar from "component/Avatar"
 import Anchor from "component/Anchor"
+import Badge from "component/Badge"
 
 import {container, box, badges} from "./home-page.module.css"
 
@@ -40,16 +44,24 @@ const Home = ({data}) => {
         <div className={badges}>
           <div>
             <Anchor href={`https://github.com/${viewer.login}`}>
-              Github
+              <Badge icon={faGithub}>
+                GitHub
+              </Badge>
             </Anchor>
           </div>
           <div>
             <Anchor href="https://twitter.com/octet_stream">
-              Twitter
+              <Badge icon={faTwitter}>
+                Twitter
+              </Badge>
             </Anchor>
           </div>
           <div>
-            <Anchor href={`mailto:${viewer.email}`}>Email</Anchor>
+            <Anchor href={`mailto:${viewer.email}`}>
+              <Badge icon={faEnvelope}>
+                Email
+              </Badge>
+            </Anchor>
           </div>
         </div>
       </div>
