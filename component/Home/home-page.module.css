@@ -13,9 +13,8 @@
 }
 
 .badges {
-  display: grid;
-  gap: var(--spacing-xs);
-  grid-auto-flow: column;
+  display: flex;
+  justify-content: center;
 }
 
 @media (width <= 500px) {

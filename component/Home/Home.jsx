@@ -35,6 +35,7 @@ const Home = ({data}) => {
           <h1>
             Hi! I am {viewer.name}
           </h1>
+
           <div>
             <span>I am JavaScript developer. I work primarily with </span>
             <span>Node.js, GraphQL, React, MobX and Next.js</span>
@@ -42,27 +43,23 @@ const Home = ({data}) => {
         </div>
 
         <div className={badges}>
-          <div>
-            <Anchor href={`https://github.com/${viewer.login}`}>
-              <Badge icon={faGithub}>
-                GitHub
-              </Badge>
-            </Anchor>
-          </div>
-          <div>
-            <Anchor href="https://twitter.com/octet_stream">
-              <Badge icon={faTwitter}>
-                Twitter
-              </Badge>
-            </Anchor>
-          </div>
-          <div>
-            <Anchor href={`mailto:${viewer.email}`}>
-              <Badge icon={faEnvelope}>
-                Email
-              </Badge>
-            </Anchor>
-          </div>
+          <Anchor href={`https://github.com/${viewer.login}`}>
+            <Badge icon={faGithub}>
+              GitHub
+            </Badge>
+          </Anchor>
+
+          <Anchor href="https://twitter.com/octet_stream">
+            <Badge icon={faTwitter}>
+              Twitter
+            </Badge>
+          </Anchor>
+
+          <Anchor href={`mailto:${viewer.email}`}>
+            <Badge icon={faEnvelope}>
+              Email
+            </Badge>
+          </Anchor>
         </div>
       </div>
     </div>

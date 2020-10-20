@@ -1,6 +1,8 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
-import {text} from "./badge.module.css"
+import cn from "classnames"
+
+import {container, text} from "./badge.module.css"
 
 /**
  * @typedef {import("@fortawesome/fontawesome-svg-core").IconProp} IconProp
@@ -17,7 +19,7 @@ import {text} from "./badge.module.css"
 
 /** @type {React.FC<BadgeProps>} */
 const Badge = ({icon, size, className, children}) => (
-  <div className={className}>
+  <div className={cn(container, className)}>
     <FontAwesomeIcon size={size} icon={icon} />
     <div className={text}>{children}</div>
   </div>
