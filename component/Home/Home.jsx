@@ -9,7 +9,7 @@ import Avatar from "component/Avatar"
 import Anchor from "component/Anchor"
 import Badge from "component/Badge"
 
-import {container, box, badges} from "./home-page.module.css"
+import {container, intro, badges} from "./home-page.module.css"
 
 /**
  * @typedef {import("type/Viewer").default} Viewer
@@ -28,7 +28,7 @@ const Home = ({data}) => {
 
   return (
     <div className={container}>
-      <div className={box}>
+      <div className={intro}>
         <div>
           <Avatar src={viewer.avatarUrl} alt={`Avatar – @${viewer.login}`} />
 
