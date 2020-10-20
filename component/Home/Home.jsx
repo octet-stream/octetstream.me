@@ -32,12 +32,12 @@ const Home = ({data}) => {
         <div>
           <Avatar src={viewer.avatarUrl} alt={`Avatar – @${viewer.login}`} />
 
-          <h1>
-            Hi! I am {viewer.name}
-          </h1>
+          <h1>Hi! I am {viewer.name}</h1>
 
           <div>
-            <span>I am JavaScript developer. I work primarily with </span>
+            <span>I am JavaScript developer </span>
+            <span>based in {viewer.location}. </span>
+            <span>I work primarily with </span>
             <span>Node.js, GraphQL, React, MobX and Next.js</span>
           </div>
         </div>
