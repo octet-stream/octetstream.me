@@ -1,4 +1,12 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.box {
+  width: 500px;
   display: grid;
   text-align: center;
   gap: var(--spacing-m);
@@ -8,4 +16,10 @@
   display: grid;
   gap: var(--spacing-xs);
   grid-auto-flow: column;
+}
+
+@media (width <= 500px) {
+  .box {
+    width: 100%;
+  }
 }
