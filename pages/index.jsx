@@ -18,6 +18,7 @@ const query = /* GraphQL */ `
       name
       login
       email
+      twitterUsername
       avatarUrl(size: 150)
       isHireable
       location

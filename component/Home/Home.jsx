@@ -11,6 +11,8 @@ import Badge from "component/Badge"
 
 import {container, intro, badges} from "./home-page.module.css"
 
+const GMAPS_BASE = "https://google.com/maps/search/?api=1&query="
+
 /**
  * @typedef {import("type/Viewer").default} Viewer
  */
@@ -36,8 +38,11 @@ const Home = ({data}) => {
 
           <div>
             <span>I am JavaScript developer </span>
-            <span>based in {viewer.location}. </span>
-            <span>I work primarily with </span>
+            <span>based in </span>
+            <Anchor href={GMAPS_BASE + viewer.location}>
+              {viewer.location}
+            </Anchor>
+            <span>. I work primarily with </span>
             <span>Node.js, GraphQL, React, MobX and Next.js</span>
           </div>
         </div>
@@ -49,7 +54,7 @@ const Home = ({data}) => {
             </Badge>
           </Anchor>
 
-          <Anchor href="https://twitter.com/octet_stream">
+          <Anchor href={`https://twitter.com/${viewer.twitterUsername}`}>
             <Badge icon={faTwitter}>
               Twitter
             </Badge>
