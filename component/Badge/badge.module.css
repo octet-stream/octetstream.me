@@ -1,5 +1,6 @@
 .container {
   padding: 0 var(--spacing-s);
+  color: var(--colors-text);
 }
 
 .text {

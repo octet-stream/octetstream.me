@@ -3,6 +3,7 @@
   --colors-white: white;
   --colors-text: var(--colors-black);
   --colors-background: var(--colors-white);
+  --colors-interactive: #ef5092;
 }
 
 .dark {
@@ -10,4 +11,5 @@
   --colors-white: #c0c5ce;
   --colors-text: var(--colors-white);
   --colors-background: var(--colors-black);
+  --colors-interactive: #a56fba;
 }
