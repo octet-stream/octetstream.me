@@ -16,9 +16,3 @@
   display: flex;
   justify-content: center;
 }
-
-@media (width <= 500px) {
-  .box {
-    width: 100%;
-  }
-}
