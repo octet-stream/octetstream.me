@@ -11,14 +11,14 @@ import PageError from "component/Error/PageError"
 
 /** @type {React.FC<AppProps>} */
 const Application = ({Component, pageProps}) => {
-  const {error, ...renderProps} = pageProps
+  const {error, ...props} = pageProps
 
   return (
     <Fragment>
-      <Title title="Nick's Website" />
+      <Title title="Nick K." />
 
       <PageError error={error}>
-        <Component {...renderProps} />
+        <Component {...props} />
       </PageError>
     </Fragment>
   )
