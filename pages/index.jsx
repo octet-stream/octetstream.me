@@ -1,3 +1,4 @@
+import withErrors from "lib/error/serializeErrorDecorator"
 import github from "lib/graphql/github"
 
 /**
@@ -27,7 +28,7 @@ const query = /* GraphQL */ `
 `
 
 /** @type {import("next").GetStaticProps<HomePageProps>} */
-export const getStaticProps = async () => {
+export const getStaticProps = withErrors(async () => {
   /** @type {HomePageProps} */
   const result = await github({query})
 
@@ -35,6 +36,6 @@ export const getStaticProps = async () => {
     props: result,
     revalidate: 60
   }
-}
+})
 
 export {default} from "component/Home"
