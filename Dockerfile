@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:lts
 LABEL maintainer="Nick K."
 
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.22.5
