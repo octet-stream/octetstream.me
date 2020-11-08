@@ -8,7 +8,8 @@ COPY . /usr/src/octetstream.me
 WORKDIR /usr/src/octetstream.me
 
 RUN yarn install
-RUN NEXT_TELEMETRY_DISABLED=1 yarn build
+RUN npx next telemetry disable
+RUN yarn build
 
 EXPOSE 1337
 CMD ["yarn", "start", "-p", "1337"]
