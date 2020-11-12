@@ -1267,10 +1267,10 @@
   resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-1.1.1.tgz#516bd9cf47c667fbd4c82ebb53bb06535546a512"
   integrity sha512-JKh+tUzswqZgA3+lYywIcJt261M0xjI0FpMnZXQ/85bPOl/I4HdVeEUcT9rjXqsiZRrjHJMwSjZWI/HqsqgqyA==
 
-"@prefresh/next@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@prefresh/next/-/next-1.4.0.tgz#d8b11bd640d3447b62ed8732585d91c73da0e552"
-  integrity sha512-nrnkuk84G2jf1dG5AyK7rruI+9LJSCBs4zIhi1VFv4dFPOlUQ4XrqqbUQZ/p743ihXEE1qLqkD7Ofiv8E0UvGA==
+"@prefresh/next@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@prefresh/next/-/next-1.4.1.tgz#b8f781dfdad35eba60da21875c14a3514fba2597"
+  integrity sha512-RyRaoJVJ11yb5/t1IK5ROZvAq5pFfAYUV5O+LwDMyD6ExtObLGQZP3ME8W5D3nW8AmnS6Agr3wmY8mAHECtOdw==
   dependencies:
     "@prefresh/babel-plugin" "0.2.2"
     "@prefresh/core" "^1.0.0"
@@ -1295,10 +1295,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
 
-"@types/node@14.14.6":
-  version "14.14.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.6.tgz#146d3da57b3c636cc0d1769396ce1cfa8991147f"
-  integrity sha512-6QlRuqsQ/Ox/aJEQWBEJG7A9+u7oSYl3mem/K8IzxXG/kAGbV1YPD9Bg9Zw3vyxC/YP+zONKwy8hGkSt1jxFMw==
+"@types/node@14.14.7":
+  version "14.14.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.7.tgz#8ea1e8f8eae2430cf440564b98c6dfce1ec5945d"
+  integrity sha512-Zw1vhUSQZYw+7u5dAwNbIA9TuTotpzY/OF7sJM9FqPOF3SPjKnxrjoTktXDZgUjybf4cWVBP7O8wvKdSaGHweg==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -5796,10 +5796,10 @@ preact-render-to-string@^5.1.11:
   dependencies:
     pretty-format "^3.8.0"
 
-preact@^10.5.5:
-  version "10.5.5"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.5.tgz#c6c172ca751df27483350b8ab622abc12956e997"
-  integrity sha512-5ONLNH1SXMzzbQoExZX4TELemNt+TEDb622xXFNfZngjjM9qtrzseJt+EfiUu4TZ6EJ95X5sE1ES4yqHFSIdhg==
+preact@^10.5.7:
+  version "10.5.7"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.7.tgz#f1d84725539e18f7ccbea937cf3db5895661dbd3"
+  integrity sha512-4oEpz75t/0UNcwmcsjk+BIcDdk68oao+7kxcpc1hQPNs2Oo3ZL9xFz8UBf350mxk/VEdD41L5b4l2dE3Ug3RYg==
 
 prebuild-install@^5.3.5:
   version "5.3.6"
