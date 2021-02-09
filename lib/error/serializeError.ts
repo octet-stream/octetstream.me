@@ -1,8 +1,9 @@
+import OperationError from "../graphql/OperationError"
+
 /**
- * @param {Object} props
- * @param {import("@apollo/client").ApolloError | Error} [error]
+ * @param {Error} [error]
  */
-const serializeError = error => {
+const serializeError = (error: OperationError) => {
   if (!error) {
     return null
   }

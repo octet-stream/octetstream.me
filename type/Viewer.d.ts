@@ -1,4 +1,4 @@
-type Viewer = {
+interface Viewer {
   name: string
   login: string
   email: string

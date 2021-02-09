@@ -1,4 +1,4 @@
-type PageErrorObject = {
+interface PageErrorObject {
   name: string
   message: string
   status?: number

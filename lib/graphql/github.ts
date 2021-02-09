@@ -5,16 +5,23 @@ import OperationError from "./OperationError"
 
 const API_URL = "https://api.github.com/graphql"
 
-/**
- * @typedef {Object} Operation
- *
- * @prop {string} query
- * @prop {string} [operationName]
- * @prop {Object.<string, any>} [variables]
- */
+interface Operation<V = any> {
+  query: string
+  operationName?: string
+  variables?: V
+}
 
-/** @type {RequestInit} */
-const defaults = {
+interface OperationResult<T = {}> {
+  data?: T
+  error?: OperationError
+}
+
+interface ResponseShape<T = {}> {
+  data?: T
+  errors: Error[]
+}
+
+const defaults: RequestInit = {
   method: "post",
   headers: {
     authorization: `Bearer ${process.env.NEXT_PUBLIC_GITHUB_API_ACCESS_TOKEN}`,
@@ -22,10 +29,7 @@ const defaults = {
   }
 }
 
-/**
- * @param {Response} response
- */
-async function onResponse(response) {
+async function onResponse(response: Response) {
   if (response.status >= 300) {
     throw new NetworkError(response.statusText, response)
   }
@@ -35,22 +39,13 @@ async function onResponse(response) {
 
 /**
  * Makes a request to GitHub GraphQL API
- *
- * @template {{}} T
- *
- * @param {Operation} operation
- *
- * @return {Promise<T>}
  */
-const github = async operation => {
-  /** @type {RequestInit} */
-  const init = {...defaults, body: JSON.stringify(operation)}
+const github = async <R = any, V = {}>(operation: Operation<V>): Promise<OperationResult<R>> => {
+  const init: RequestInit = {...defaults, body: JSON.stringify(operation)}
 
-  /** @type {{data?: T, error?: OperationError}} */
-  const result = {}
+  const result: OperationResult<R> = {}
   try {
-    /** @type {{data?: T, errors: Array<Error>}} */
-    const {data, errors} = await fetch(API_URL, init).then(onResponse)
+    const {data, errors}: ResponseShape<R> = await fetch(API_URL, init).then(onResponse)
 
     if (errors) {
       result.error = new OperationError({graphQLErrors: errors})

@@ -2,14 +2,7 @@ import isEmpty from "lodash/isEmpty"
 
 import serialize from "./serializeError"
 
-/**
- * @template T
- *
- * @param {T} fn
- *
- * @return {T}
- */
-const serializeErrorDecorator = fn => async props => {
+const withErrors = fn => async (props: {}) => {
   let error = null
   let result = null
   try {
@@ -31,4 +24,4 @@ const serializeErrorDecorator = fn => async props => {
   return result
 }
 
-export default serializeErrorDecorator
+export default withErrors

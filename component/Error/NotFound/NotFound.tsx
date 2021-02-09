@@ -1,4 +1,4 @@
-import {Fragment} from "react"
+import type {FC} from "preact/compat"
 
 import Title from "component/Title"
 
@@ -9,12 +9,8 @@ import {
   status
 } from "./not-found.module.css"
 
-// TODO: Improve page design
-/**
- * @type {React.FC}
- */
-const NotFound = () => (
-  <Fragment>
+const NotFound: FC = () => (
+  <>
     <Title title="Page not found" />
 
     <div className={container}>
@@ -30,7 +26,7 @@ const NotFound = () => (
         </div>
       </div>
     </div>
-  </Fragment>
+  </>
 )
 
 export default NotFound

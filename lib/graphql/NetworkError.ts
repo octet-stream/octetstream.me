@@ -1,9 +1,15 @@
 class NetworkError extends Error {
-  /**
-   * @param {string} message
-   * @param {Response} response
-   */
-  constructor(message, response) {
+  public status: number
+
+  public statusCode: number
+
+  public statusText: string
+
+  public code: string
+
+  public response: Response
+
+  constructor(message: string, response: Response) {
     super(message)
 
     this.response = response
