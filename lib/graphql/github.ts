@@ -41,7 +41,9 @@ const github = async <R = any, V = {}>(operation: Operation<V>): Promise<Operati
 
   const result: OperationPayload<R> = {}
   try {
-    const {data, errors}: ResponseShape<R> = await fetch(API_URL, init).then(onResponse)
+    const {
+      data, errors
+    }: ResponseShape<R> = await fetch(API_URL, init).then(onResponse)
 
     if (errors) {
       result.error = new OperationError({graphQLErrors: errors})
