@@ -1,6 +1,11 @@
 import {faGithub, faTwitter} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
+import type {FC} from "preact/compat"
+
+import type OperationPayload from "lib/graphql/OperationPayload"
+import type ViewerPayload from "type/graphql/ViewerPayload"
+
 import layout from "lib/hoc/layout"
 
 import BasicLayout from "layout/Basic"
@@ -9,28 +14,16 @@ import Avatar from "component/Avatar"
 import Anchor from "component/Anchor"
 import Badge from "component/Badge"
 
-import {container, intro, badges} from "./home-page.module.css"
+import s from "./home-page.module.css"
 
 const GMAPS_BASE = "https://google.com/maps/search/?api=1&query="
 
-/**
- * @typedef {import("type/Viewer").default} Viewer
- */
-
-/**
- * @typedef {Object} HomePageProps
- *
- * @prop {any[]} [errors]
- * @prop {{viewer: Viewer}} [data]
- */
-
-/** @type {React.FC<HomePageProps>} */
-const Home = ({data}) => {
+const Home: FC<OperationPayload<ViewerPayload>> = ({data}) => {
   const {viewer} = data
 
   return (
-    <div className={container}>
-      <div className={intro}>
+    <div className={s.container}>
+      <div className={s.intro}>
         <div>
           <Avatar src={viewer.avatarUrl} alt={`Avatar – @${viewer.login}`} />
 
@@ -47,7 +40,7 @@ const Home = ({data}) => {
           </div>
         </div>
 
-        <div className={badges}>
+        <div className={s.badges}>
           <Anchor href={`https://github.com/${viewer.login}`}>
             <Badge icon={faGithub}>
               GitHub
@@ -71,4 +64,4 @@ const Home = ({data}) => {
   )
 }
 
-export default Home |> layout(BasicLayout)
+export default layout(BasicLayout)(Home)

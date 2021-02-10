@@ -1,9 +1,4 @@
-import OperationError from "../graphql/OperationError"
-
-/**
- * @param {Error} [error]
- */
-const serializeError = (error: OperationError) => {
+const serializeError = (error: any) => {
   if (!error) {
     return null
   }

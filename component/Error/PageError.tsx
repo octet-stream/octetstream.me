@@ -1,4 +1,4 @@
-import {FC} from "preact/compat"
+import type {FC} from "preact/compat"
 
 import NextError from "next/error"
 
@@ -7,7 +7,7 @@ import PageErrorObject from "type/PageErrorObject"
 import NotFound from "component/Error/NotFound"
 
 interface PageErrorProps {
-  error: PageErrorObject
+  error?: PageErrorObject
 }
 
 /**
@@ -16,18 +16,14 @@ interface PageErrorProps {
 const PageError: FC<PageErrorProps> = ({error, children}) => {
   if (!error) {
     // TODO: Add error boundary here
-    return children
+    return <>{children}</>
   }
 
   if (error.status === 404) {
     return <NotFound />
   }
 
-  return <NextError {...error} />
-}
-
-PageError.defaultProps = {
-  error: null
+  return <NextError statusCode={error.status} error={error} />
 }
 
 export default PageError

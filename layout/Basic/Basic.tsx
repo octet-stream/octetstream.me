@@ -1,19 +1,19 @@
-import {Fragment, FC} from "preact/compat"
+import {FC} from "preact/compat"
 
 import Title from "component/Title"
 
-import {container, content} from "./basic-layout.module.css"
+import s from "./basic-layout.module.css"
 
 const BasicLayout: FC<{title?: string}> = ({children, title}) => (
-  <Fragment>
+  <>
     {title && <Title title={title} />}
 
-    <div className={container}>
-      <div className={content}>
+    <div className={s.container}>
+      <div className={s.content}>
         {children}
       </div>
     </div>
-  </Fragment>
+  </>
 )
 
 export default BasicLayout

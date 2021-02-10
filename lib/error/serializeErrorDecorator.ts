@@ -2,7 +2,7 @@ import isEmpty from "lodash/isEmpty"
 
 import serialize from "./serializeError"
 
-const withErrors = fn => async (props: {}) => {
+const withErrors = fn => async (props: Object) => {
   let error = null
   let result = null
   try {

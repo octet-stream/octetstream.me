@@ -16,6 +16,7 @@
     "cross-env": "7.0.3",
     "isomorphic-unfetch": "3.1.0",
     "next": "10.0.6",
+    "next-plugin-preact": "^3.0.3",
     "node-fetch": "2.6.1",
     "preact": "^10.5.12",
     "preact-render-to-string": "^5.1.12",
@@ -33,7 +34,6 @@
     "@babel/plugin-proposal-optional-chaining": "7.12.13",
     "@babel/plugin-proposal-pipeline-operator": "7.12.13",
     "@octetstream/eslint-config": "5.0.0",
-    "@prefresh/next": "1.4.4",
     "@types/classnames": "2.2.11",
     "@types/lodash": "4.14.168",
     "@types/node": "14.14.25",
@@ -53,6 +53,7 @@
     "postcss-preset-env": "6.7.0",
     "postcss-use": "3.0.0",
     "typescript": "4.1.4",
-    "typescript-plugin-css-modules": "3.2.0"
+    "typescript-plugin-css-modules": "3.2.0",
+    "webpack": "^5.21.2"
   }
 }

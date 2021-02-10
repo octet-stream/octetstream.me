@@ -1,11 +1,11 @@
 class NetworkError extends Error {
-  public status: number
+  public status: number = 500
 
-  public statusCode: number
+  public statusCode: number = 500
 
-  public statusText: string
+  public statusText: string = null
 
-  public code: string
+  public code: string = null
 
   public response: Response
 

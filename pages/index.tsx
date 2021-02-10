@@ -1,9 +1,10 @@
-// import {GetStaticProps} from "next"
+import {GetStaticProps} from "next"
 
 import withErrors from "lib/error/serializeErrorDecorator"
 import github from "lib/graphql/github"
 
-import type Viewer from "type/Viewer"
+import type OperationPayload from "lib/graphql/OperationPayload"
+import type ViewerPayload from "type/graphql/ViewerPayload"
 
 const query = /* GraphQL */ `
   query {
@@ -19,13 +20,17 @@ const query = /* GraphQL */ `
   }
 `
 
-export const getStaticProps = withErrors(async () => {
-  const result = await github<Viewer>({query})
+type GetHomePageProps = GetStaticProps<OperationPayload<ViewerPayload>>
 
-  return {
-    props: result,
-    revalidate: 60
+export const getStaticProps: GetHomePageProps = withErrors(
+  async () => {
+    const result = await github<ViewerPayload>({query})
+
+    return {
+      props: result,
+      revalidate: 60
+    }
   }
-})
+)
 
 export {default} from "component/Home"

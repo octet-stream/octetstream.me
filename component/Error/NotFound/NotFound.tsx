@@ -2,21 +2,16 @@ import type {FC} from "preact/compat"
 
 import Title from "component/Title"
 
-import {
-  container,
-  content,
-  message,
-  status
-} from "./not-found.module.css"
+import s from "./not-found.module.css"
 
 const NotFound: FC = () => (
   <>
     <Title title="Page not found" />
 
-    <div className={container}>
-      <div className={content}>
-        <div className={message}>
-          <h1 className={status}>
+    <div className={s.container}>
+      <div className={s.content}>
+        <div className={s.message}>
+          <h1 className={s.status}>
             404
           </h1>
 

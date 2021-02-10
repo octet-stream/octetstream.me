@@ -2,6 +2,7 @@ import fetch from "isomorphic-unfetch"
 
 import NetworkError from "./NetworkError"
 import OperationError from "./OperationError"
+import OperationPayload from "./OperationPayload"
 
 const API_URL = "https://api.github.com/graphql"
 
@@ -9,11 +10,6 @@ interface Operation<V = any> {
   query: string
   operationName?: string
   variables?: V
-}
-
-interface OperationResult<T = {}> {
-  data?: T
-  error?: OperationError
 }
 
 interface ResponseShape<T = {}> {
@@ -40,10 +36,10 @@ async function onResponse(response: Response) {
 /**
  * Makes a request to GitHub GraphQL API
  */
-const github = async <R = any, V = {}>(operation: Operation<V>): Promise<OperationResult<R>> => {
+const github = async <R = any, V = {}>(operation: Operation<V>): Promise<OperationPayload<R>> => {
   const init: RequestInit = {...defaults, body: JSON.stringify(operation)}
 
-  const result: OperationResult<R> = {}
+  const result: OperationPayload<R> = {}
   try {
     const {data, errors}: ResponseShape<R> = await fetch(API_URL, init).then(onResponse)
 

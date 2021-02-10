@@ -5,7 +5,7 @@ import getName from "lib/helper/component/getName"
 /**
  * Applies given Layout to the Target component
  */
-const withLayout = (Layout, layoutProps) => Target => {
+const withLayout = (Layout: any, layoutProps?: Object) => (Target: any) => {
   const WithLayout: FC = props => (
     <Layout {...layoutProps}>
       <Target {...props} />
