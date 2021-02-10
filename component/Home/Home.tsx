@@ -18,7 +18,9 @@ import s from "./home-page.module.css"
 
 const GMAPS_BASE = "https://google.com/maps/search/?api=1&query="
 
-const Home: FC<OperationPayload<ViewerPayload>> = ({data}) => {
+type HomePageProps = OperationPayload<ViewerPayload>
+
+const Home: FC<HomePageProps> = ({data}) => {
   const {viewer} = data
 
   return (
