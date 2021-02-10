@@ -1,6 +1,6 @@
 import {GetStaticProps} from "next"
 
-import withErrors from "lib/error/serializeErrorDecorator"
+import withErrors from "lib/error/withErrors"
 import github from "lib/graphql/github"
 
 import type OperationPayload from "lib/graphql/OperationPayload"
