@@ -5,7 +5,7 @@ interface PageErrorObject {
   statusCode?: number
   statusText: string
   code?: string
-  static: string
+  stack: string
 }
 
 export default PageErrorObject
