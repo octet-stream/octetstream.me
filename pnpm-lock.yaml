@@ -40,11 +40,11 @@ specifiers:
   postcss-normalize: 10.0.0
   postcss-preset-env: 6.7.0
   postcss-use: 3.0.0
-  preact: ^10.5.12
-  preact-render-to-string: ^5.1.15
-  react: npm:@preact/compat@^0.0.3
-  react-dom: npm:@preact/compat@^0.0.3
-  react-ssr-prepass: npm:preact-ssr-prepass@^1.1.2
+  preact: ^10.5.14
+  preact-render-to-string: ^5.1.19
+  react: npm:@preact/compat@^17.0.2
+  react-dom: npm:@preact/compat@^17.0.2
+  react-ssr-prepass: npm:preact-ssr-prepass@^1.2.0
   sharp: 0.29.0
   typescript: 4.3.5
   typescript-plugin-css-modules: 3.4.0
@@ -54,17 +54,17 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.36
   '@fortawesome/free-brands-svg-icons': 5.15.4
   '@fortawesome/free-solid-svg-icons': 5.15.4
-  '@fortawesome/react-fontawesome': 0.1.15_b0b1a8a36855e9a619e02827af554afb
+  '@fortawesome/react-fontawesome': 0.1.15_652ac4363ffdc896182f16949e3ac512
   classnames: 2.3.1
   cross-env: 7.0.3
   isomorphic-unfetch: 3.1.0
-  next: 11.1.0_8221c8a25f445893e70f4055ba47219c
+  next: 11.1.0_5da1f18c735a20b03f76da398fb786f0
   next-plugin-preact: 3.0.6_f575c9d6743d5ef153ed829e22be1c2f
   node-fetch: 2.6.1
   preact: 10.5.14
   preact-render-to-string: 5.1.19_preact@10.5.14
-  react: /@preact/compat/0.0.3_preact@10.5.14
-  react-dom: /@preact/compat/0.0.3_preact@10.5.14
+  react: /@preact/compat/17.0.2_preact@10.5.14
+  react-dom: /@preact/compat/17.0.2_preact@10.5.14
   react-ssr-prepass: /preact-ssr-prepass/1.2.0_preact@10.5.14
   sharp: 0.29.0
 
@@ -582,7 +582,7 @@ packages:
       '@fortawesome/fontawesome-common-types': 0.2.36
     dev: false
 
-  /@fortawesome/react-fontawesome/0.1.15_b0b1a8a36855e9a619e02827af554afb:
+  /@fortawesome/react-fontawesome/0.1.15_652ac4363ffdc896182f16949e3ac512:
     resolution: {integrity: sha512-/HFHdcoLESxxMkqZAcZ6RXDJ69pVApwdwRos/B2kiMWxDSAX2dFK8Er2/+rG+RsrzWB/dsAyjefLmemgmfE18g==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ^1.2.32
@@ -590,7 +590,7 @@ packages:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.36
       prop-types: 15.7.2
-      react: /@preact/compat/0.0.3_preact@10.5.14
+      react: /@preact/compat/17.0.2_preact@10.5.14
     dev: false
 
   /@hapi/accept/5.0.2:
@@ -637,7 +637,7 @@ packages:
     resolution: {integrity: sha512-64EgW8SzJRQls2yJ5DkuljRxgE24o2kYtX/ghTkPUJYsfidHMWzQGwg26IgRbb/uHqTd1G0W5UkKag+Nt8TWaQ==}
     dev: false
 
-  /@next/react-dev-overlay/11.1.0_c659d829e125dcf9ed0c2a6041a7aa26:
+  /@next/react-dev-overlay/11.1.0_82cb9fd171153d2c613334009d54eb8b:
     resolution: {integrity: sha512-h+ry0sTk1W3mJw+TwEf91aqLbBJ5oqAsxfx+QryqEItNtfW6zLSSjxkyTYTqX8DkgSssQQutQfATkzBVgOR+qQ==}
     peerDependencies:
       react: ^17.0.2
@@ -650,8 +650,8 @@ packages:
       css.escape: 1.5.1
       data-uri-to-buffer: 3.0.1
       platform: 1.3.6
-      react: /@preact/compat/0.0.3_preact@10.5.14
-      react-dom: /@preact/compat/0.0.3_preact@10.5.14
+      react: /@preact/compat/17.0.2_preact@10.5.14
+      react-dom: /@preact/compat/17.0.2_preact@10.5.14
       shell-quote: 1.7.2
       source-map: 0.8.0-beta.0
       stacktrace-parser: 0.1.10
@@ -712,8 +712,8 @@ packages:
       - supports-color
     dev: true
 
-  /@preact/compat/0.0.3_preact@10.5.14:
-    resolution: {integrity: sha512-91h26PC9ZvyePT9VHrQF+4ZyIx4HsGm0nwLz7VwBRGPbp3cPj0mLGaKr4wvWNJU5Mzpf1fOzFmK6oltFyrr+Xg==}
+  /@preact/compat/17.0.2_preact@10.5.14:
+    resolution: {integrity: sha512-svzrLCGU++qft7dPmP2hQuSfih73jge2ohoWCT+UQs7i9757p12xMTe3yefylW5t6zMkQEtQ6urPnGT3jh2VCg==}
     peerDependencies:
       preact: '*'
     dependencies:
@@ -743,7 +743,7 @@ packages:
       '@prefresh/core': 1.3.2_preact@10.5.14
       '@prefresh/utils': 1.1.1
       '@prefresh/webpack': 3.3.2_240ad43f0d14495071b465dd56972109
-      next: 11.1.0_8221c8a25f445893e70f4055ba47219c
+      next: 11.1.0_5da1f18c735a20b03f76da398fb786f0
       preact: 10.5.14
       webpack: 5.51.1
     dev: false
@@ -3597,7 +3597,7 @@ packages:
       - webpack
     dev: false
 
-  /next/11.1.0_8221c8a25f445893e70f4055ba47219c:
+  /next/11.1.0_5da1f18c735a20b03f76da398fb786f0:
     resolution: {integrity: sha512-GHBk/c7Wyr6YbFRFZF37I0X7HKzkHHI8pur/loyXo5AIE8wdkbGPGO0ds3vNAO6f8AxZAKGCRYtAzoGlVLoifA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -3619,7 +3619,7 @@ packages:
       '@hapi/accept': 5.0.2
       '@next/env': 11.1.0
       '@next/polyfill-module': 11.1.0
-      '@next/react-dev-overlay': 11.1.0_c659d829e125dcf9ed0c2a6041a7aa26
+      '@next/react-dev-overlay': 11.1.0_82cb9fd171153d2c613334009d54eb8b
       '@next/react-refresh-utils': 11.1.0_93428a4abc256bda8a22168e2c276341
       '@node-rs/helper': 1.2.1
       assert: 2.0.0
@@ -3653,17 +3653,17 @@ packages:
       process: 0.11.10
       querystring-es3: 0.2.1
       raw-body: 2.4.1
-      react: /@preact/compat/0.0.3_preact@10.5.14
-      react-dom: /@preact/compat/0.0.3_preact@10.5.14
+      react: /@preact/compat/17.0.2_preact@10.5.14
+      react-dom: /@preact/compat/17.0.2_preact@10.5.14
       react-is: 17.0.2
       react-refresh: 0.8.3
       stream-browserify: 3.0.0
       stream-http: 3.1.1
       string_decoder: 1.3.0
-      styled-jsx: 4.0.0_20aa661b584da2457e84ae2832c6ea7d
+      styled-jsx: 4.0.0_1bde4a3a39ca6ef9f5be7c0c9bcc156a
       timers-browserify: 2.0.12
       tty-browserify: 0.0.1
-      use-subscription: 1.5.1_@preact+compat@0.0.3
+      use-subscription: 1.5.1_@preact+compat@17.0.2
       util: 0.12.3
       vm-browserify: 1.1.2
       watchpack: 2.1.1
@@ -5203,7 +5203,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /styled-jsx/4.0.0_20aa661b584da2457e84ae2832c6ea7d:
+  /styled-jsx/4.0.0_1bde4a3a39ca6ef9f5be7c0c9bcc156a:
     resolution: {integrity: sha512-2USeoWMoJ/Lx5s2y1PxuvLy/cz2Yrr8cTySV3ILHU1Vmaw1bnV7suKdblLPjnyhMD+qzN7B1SWyh4UZTARn/WA==}
     peerDependencies:
       react: '>= 16.8.0 || 17.x.x || 18.x.x'
@@ -5212,7 +5212,7 @@ packages:
       '@babel/types': 7.15.0
       convert-source-map: 1.7.0
       loader-utils: 1.2.3
-      react: /@preact/compat/0.0.3_preact@10.5.14
+      react: /@preact/compat/17.0.2_preact@10.5.14
       source-map: 0.7.3
       string-hash: 1.1.3
       stylis: 3.5.4
@@ -5512,13 +5512,13 @@ packages:
       querystring: 0.2.0
     dev: false
 
-  /use-subscription/1.5.1_@preact+compat@0.0.3:
+  /use-subscription/1.5.1_@preact+compat@17.0.2:
     resolution: {integrity: sha512-Xv2a1P/yReAjAbhylMfFplFKj9GssgTwN7RlcTxBujFQcloStWNDQdc4g4NRWH9xS4i/FDk04vQBptAXoF3VcA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
     dependencies:
       object-assign: 4.1.1
-      react: /@preact/compat/0.0.3_preact@10.5.14
+      react: /@preact/compat/17.0.2_preact@10.5.14
     dev: false
 
   /util-deprecate/1.0.2:

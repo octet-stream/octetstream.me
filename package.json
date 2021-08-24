@@ -18,11 +18,11 @@
     "next": "11.1.0",
     "next-plugin-preact": "3.0.6",
     "node-fetch": "2.6.1",
-    "preact": "^10.5.12",
-    "preact-render-to-string": "^5.1.15",
-    "react": "npm:@preact/compat@^0.0.3",
-    "react-dom": "npm:@preact/compat@^0.0.3",
-    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.1.2",
+    "preact": "^10.5.14",
+    "preact-render-to-string": "^5.1.19",
+    "react": "npm:@preact/compat@^17.0.2",
+    "react-dom": "npm:@preact/compat@^17.0.2",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0",
     "sharp": "0.29.0"
   },
   "devDependencies": {
