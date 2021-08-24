@@ -1,24 +1,12 @@
 module.exports = {
-  parser: "babel-eslint",
-  parserOptions: {
-    ecmaFeatures: {
-      modules: true,
-      jsx: true
-    }
-  },
-  plugins: [
-    "react"
-  ],
+  parser: "@typescript-eslint/parser",
   extends: [
-    "airbnb",
+    "airbnb-typescript",
     "@octetstream"
   ],
   settings: {
     "import/resolver": {
-      "babel-module": {
-        cwd: __dirname,
-        root: ["."],
-      }
+      typescript: {}
     }
   },
   rules: {
