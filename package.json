@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
-    "@babel/eslint-parser": "^7.15.0",
     "@babel/plugin-proposal-decorators": "7.14.5",
     "@babel/plugin-proposal-do-expressions": "7.14.5",
     "@babel/plugin-proposal-logical-assignment-operators": "7.14.5",
