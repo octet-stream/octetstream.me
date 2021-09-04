@@ -1,19 +1,19 @@
-FROM node:14-alpine
+FROM node:14
 
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.22.10
+RUN curl -f https://get.pnpm.io/v6.14.js | node - add --global pnpm
 
 RUN mkdir -p /usr/src/octetstream.me
 WORKDIR /usr/src/octetstream.me
 
 COPY package.json /usr/src/octetstream.me
-COPY yarn.lock /usr/src/octetstream.me
+COPY pnpm-lock.yaml /usr/src/octetstream.me
 
-RUN yarn install
+RUN pnpm install --frozen-lockfile
 
 COPY . /usr/src/octetstream.me
 
-RUN npx next telemetry disable
-RUN yarn build
+RUN pnpm exec next telemetry disable
+RUN pnpm run build
 
 EXPOSE 1337
-CMD ["yarn", "start", "-p", "1337"]
+CMD ["pnpm", "run", "start", "--", "-p", "1337"]
